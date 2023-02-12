@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test41101</string>
+    <string name="button_clicked">"button clicked"</string>
+    <string name="i_was_clicked">I was clicked</string>
+    <string name="do_something">do something</string>
+    <string name="do_something_else">Do something else</string>
+    <string name="first_name">First Name</string>
+    <string name="yet_something_different">Yet something different</string>
+    <string name="text_view">TextView</string>
+    <string name="yes_or_no">Yes or no</string>
+</resources>
