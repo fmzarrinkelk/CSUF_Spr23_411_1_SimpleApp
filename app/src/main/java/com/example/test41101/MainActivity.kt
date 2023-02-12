@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         doSomethingButton.setOnClickListener { view: View ->
             val btn = view as Button
             val txt = btn.text.toString()
+            println("this message is printed in the \"Run\" tab")
             Log.i(LOG_TAG, "my button $txt was called")
             Log.d(LOG_TAG, "this is a debug message")
             Toast.makeText(this, R.string.button_clicked, Toast.LENGTH_SHORT).show()
@@ -61,7 +62,8 @@ class MainActivity : AppCompatActivity() {
     }
     private val buttonClickListener = View.OnClickListener {
         val btn: Button = (it as Button)
-        Log.i(LOG_TAG, "button clicked ${btn.text}")
+        val message = getString(R.string.button_clicked)
+        Log.i(LOG_TAG, "$message: ${btn.text}")
     }
     private val buttonLongClickListener = View.OnLongClickListener {
         val btn: Button = (it as Button)
