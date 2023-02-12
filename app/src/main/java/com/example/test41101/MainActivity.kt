@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             val btn = view as Button
             val txt = btn.text.toString()
             println("this message is printed in the \"Run\" tab")
-            Log.i(LOG_TAG, "my button $txt was called")
+            Log.i(LOG_TAG, "my button \"$txt\" was called")
             Log.d(LOG_TAG, "this is a debug message")
             Toast.makeText(this, R.string.button_clicked, Toast.LENGTH_SHORT).show()
         }
